@@ -14,16 +14,16 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',
   }
 }));
 
-// Pexels-only editorial imagery for the entire site.
+// Pexels-only editorial imagery. The visual system intentionally represents women and men across candidates, leaders and teams.
 const safeImages={
-  '.arch-image':'https://images.pexels.com/photos/35644501/pexels-photo-35644501.jpeg?auto=compress&cs=tinysrgb&w=1400',
-  '.image-one':'https://images.pexels.com/photos/36040348/pexels-photo-36040348.jpeg?auto=compress&cs=tinysrgb&w=1200',
-  '.image-two':'https://images.pexels.com/photos/18702683/pexels-photo-18702683.jpeg?auto=compress&cs=tinysrgb&w=1000',
-  '.image-three':'https://images.pexels.com/photos/15399447/pexels-photo-15399447.jpeg?auto=compress&cs=tinysrgb&w=1000',
-  '.panel-image':'https://images.pexels.com/photos/7173014/pexels-photo-7173014.jpeg?auto=compress&cs=tinysrgb&w=1400',
-  '.story-one':'https://images.pexels.com/photos/9197358/pexels-photo-9197358.jpeg?auto=compress&cs=tinysrgb&w=1000',
-  '.story-two':'https://images.pexels.com/photos/5905895/pexels-photo-5905895.jpeg?auto=compress&cs=tinysrgb&w=1000',
-  '.story-three':'https://images.pexels.com/photos/4355400/pexels-photo-4355400.jpeg?auto=compress&cs=tinysrgb&w=1000'
+  '.arch-image':'https://images.pexels.com/photos/3865843/pexels-photo-3865843.jpeg?auto=compress&cs=tinysrgb&w=1400',
+  '.image-one':'https://images.pexels.com/photos/34793734/pexels-photo-34793734.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  '.image-two':'https://images.pexels.com/photos/5668479/pexels-photo-5668479.jpeg?auto=compress&cs=tinysrgb&w=1000',
+  '.image-three':'https://images.pexels.com/photos/34793731/pexels-photo-34793731.jpeg?auto=compress&cs=tinysrgb&w=1000',
+  '.panel-image':'https://images.pexels.com/photos/7144190/pexels-photo-7144190.jpeg?auto=compress&cs=tinysrgb&w=1400',
+  '.story-one':'https://images.pexels.com/photos/5668479/pexels-photo-5668479.jpeg?auto=compress&cs=tinysrgb&w=1000',
+  '.story-two':'https://images.pexels.com/photos/34793734/pexels-photo-34793734.jpeg?auto=compress&cs=tinysrgb&w=1000',
+  '.story-three':'https://images.pexels.com/photos/3865843/pexels-photo-3865843.jpeg?auto=compress&cs=tinysrgb&w=1000'
 };
 Object.entries(safeImages).forEach(([selector,url])=>document.querySelectorAll(selector).forEach(el=>{el.style.backgroundImage=`url("${url}")`}));
 
